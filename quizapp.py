@@ -12,7 +12,7 @@ def ask_and_check ():
     global running_score
     for key, value in quiz.items():
             user_answer = input(key)
-            if user_answer == str(value):
+            if user_answer.lower() == str(value).lower():
                 print('Correct answer!')
                 running_score += 1
             else:
